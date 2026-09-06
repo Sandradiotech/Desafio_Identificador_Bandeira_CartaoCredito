@@ -1,50 +1,86 @@
-# Desafio_Identificador_Bandeira_CartaoCredito
-Projeto de Bootcamp da Dio
+# Identificador_Bandeira_CartaoCredito💳
 
-Identificador de Bandeira de Cartão de Crédito 💳
+# Projeto de Bootcamp da Dio
 
-Este projeto tem como objetivo desenvolver uma aplicação simples capaz de identificar a bandeira de um cartão de crédito, como Visa, MasterCard, American Express, entre outras, a partir do número informado pelo usuário.
+## Sobre o projeto
 
-Durante o desenvolvimento, o GitHub Copilot foi utilizado como assistente de programação, auxiliando na criação de trechos de código, sugestão de soluções, identificação de possíveis melhorias e aumento da produtividade durante a implementação.
+Este projeto demonstra o desenvolvimento de uma aplicação simples capaz de identificar a bandeira de um cartão de crédito a partir do seu número.
 
-🎯 Objetivos
+A proposta é utilizar lógica de programação e padrões dos números iniciais dos cartões para reconhecer bandeiras como Visa, MasterCard e American Express.
 
-- Identificar automaticamente a bandeira do cartão a partir do seu número;
-- Aplicar conceitos de lógica de programação e expressões regulares;
-- Desenvolver uma solução simples e organizada;
-- Utilizar o GitHub Copilot como ferramenta de apoio ao desenvolvimento;
-- Demonstrar na prática como a inteligência artificial pode auxiliar desenvolvedores na construção de aplicações.
+O projeto também demonstra o uso do **GitHub Copilot** como assistente de codificação, auxiliando na geração de código, sugestões de implementação, refatoração e produtividade.
 
-🛠️ Tecnologias e ferramentas
+## Objetivos
 
-- C# / .NET
+- Identificar a bandeira de um cartão a partir do número informado.
+- Praticar lógica de programação em C#/.NET.
+- Trabalhar com strings, condicionais e expressões regulares (Regex).
+- Utilizar o GitHub Copilot como ferramenta de apoio ao desenvolvimento.
+- Documentar uma solução simples e didática.
+
+## Tecnologias
+
+- C#
+- .NET
 - GitHub
 - GitHub Copilot
-- Expressões Regulares (Regex)
-- Lógica de programação
+- Regex
 
-💡 Funcionamento
+## Como funciona
 
-A aplicação recebe o número do cartão e analisa seus primeiros dígitos para identificar padrões associados às diferentes bandeiras.
+A aplicação recebe o número do cartão, remove caracteres de formatação quando necessário e analisa os primeiros dígitos para verificar se eles correspondem aos padrões conhecidos das bandeiras.
 
-Por exemplo:
+Exemplos de padrões:
 
-- Visa: geralmente começa com "4"
-- MasterCard: geralmente utiliza faixas como "51–55" e determinados intervalos de "2221–2720"
-- American Express: geralmente começa com "34" ou "37"
+| Bandeira | Padrão inicial comum |
+|---|---|
+| Visa | 4 |
+| MasterCard | 51–55 e determinados intervalos de 2221–2720 |
+| American Express | 34 ou 37 |
 
-«Observação: a identificação da bandeira pelo padrão do número não significa validar se o cartão é válido, existente ou autorizado para uma transação.»
+Esses padrões servem para **identificação da bandeira**. Eles não comprovam que o cartão existe, está ativo ou pode realizar uma compra.
 
-🤖 GitHub Copilot
+## Fluxo da aplicação
 
-O GitHub Copilot foi utilizado como recurso de apoio durante o desenvolvimento, demonstrando como ferramentas baseadas em inteligência artificial podem contribuir para:
+1. Usuário informa o número do cartão.
+2. A aplicação normaliza o valor informado.
+3. Os primeiros dígitos são analisados.
+4. Os padrões são comparados.
+5. A aplicação informa a bandeira identificada ou informa que não reconheceu o padrão.
 
-- geração de código;
-- sugestões de implementação;
-- refatoração;
-- exploração de alternativas;
-- aumento da produtividade do desenvolvedor.
+## GitHub Copilot
 
-📚 Aprendizados
+O GitHub Copilot pode ser utilizado durante o desenvolvimento para sugerir estruturas de código, métodos, expressões regulares e melhorias na implementação.
 
-O projeto permite praticar conceitos fundamentais de desenvolvimento, como condicionais, métodos, validações, manipulação de strings e expressões regulares, além de proporcionar uma experiência prática com ferramentas de IA aplicadas ao desenvolvimento de software.
+A utilização da IA não substitui a compreensão do código. O desenvolvedor deve revisar, testar e validar as sugestões antes de utilizá-las.
+
+## Exemplo de resultado
+
+```text
+Digite o número do cartão:
+4111 1111 1111 1111
+
+Bandeira identificada: Visa
+```
+
+## Observação de segurança
+
+Este projeto possui finalidade **educacional**. Não utilize números reais de cartões, dados pessoais ou informações financeiras reais nos testes ou no código-fonte.
+
+## Estrutura sugerida
+
+```text
+/
+├── README.md
+├── Program.cs
+├── Models/
+│   └── ...
+└── ...
+```
+
+## Conclusão
+
+O projeto apresenta uma aplicação prática e simples para estudar identificação de bandeiras de cartões, ao mesmo tempo em que demonstra como ferramentas de inteligência artificial, como o GitHub Copilot, podem apoiar o processo de desenvolvimento de software.
+
+
+
